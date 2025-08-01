@@ -19,21 +19,39 @@
             height: 100vh;
             width: 100vw;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 20px;
             background: #EEAECA;
             background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
         }
 
         .card{
 
-            width: 700px;
+            width: 400px;
             height: 200px;
             border-radius: 30px;
             background-color: antiquewhite;
             display: flex;
+            flex-direction: column;
+            gap: 20px;
             justify-content: center;
             align-items: center;
+        }
+
+        .header{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .headerrole{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .btn {
@@ -50,10 +68,8 @@
 
         .btn:hover {
             background-color: #333366;
-            transform: scale(1.05);
+             transform: scale(1.05);
         }
-
-
 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
@@ -79,12 +95,10 @@
         <div class="header">
 
             <h1>DigiTab Portal</h1>
-            <p>Welcome! Please select your role to continue:</p>
-            <p>😊learn the from the roots😊</p>
 
         </div>
 
-        <div class="card">
+        <div class="card ">
 
             <button class="btn">Teacher Login 🧑‍🏫</button>
             <button class="btn">Student Login 🧑‍🎓</button>
