@@ -3,106 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>education portal</title>
+    <title>Teacher Login </title>
+    <link rel="shortcut icon" href="teacher.png" type="image/x-icon">
 
     <style>
 
         *{
-            margin: 0px;
-            border: 0px;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
         .container{
-            margin: 3px;
-            border: 3px olive solid;
+
+            background: #531e75;
+            background: linear-gradient(90deg, rgba(83, 30, 117, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
             height: 100vh;
             width: 100vw;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 20px;
-            background: #EEAECA;
-            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        }
+
+        .form1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .card{
-
-            width: 400px;
-            height: 200px;
-            border-radius: 30px;
-            background-color: antiquewhite;
+            background-color: cadetblue;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            border: 3px black solid;
+            border-radius: 30px;
+            height: 500px;
+            width: 400px;
             justify-content: center;
             align-items: center;
         }
 
-        .header{
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        label{
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+            padding: 10px;
         }
 
-        .headerrole{
+        input{
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .btn {
-            width: 250px;
+            border-radius: 15px;
+            padding: 5px;
             height: 50px;
-            border: none;
-            border-radius: 40px;
-            background-color: #4d4d85;
-            color: white;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: 0.3s;
+            width: 250px;
         }
 
-        .btn:hover {
-            background-color: #333366;
-             transform: scale(1.05);
+        header{
+            padding: 15px;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+        main{
+            padding: 10px;
         }
 
-        @media (max-width: 500px) {
-            .container {
-                padding: 30px 20px;
-            }
-
-            .btn {
-                font-size: 15px;
-            }
+        footer{
+            padding: 10px;
         }
 
+        button{
+
+            width: 250px;
+            height: 40px;
+            border-radius: 10px;
+            background: #de146b;
+            background: radial-gradient(circle, rgba(222, 20, 107, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+        }
     </style>
+
 </head>
 <body>
 
     <div class="container">
 
-        <div class="header">
+        <div class="card">
 
-            <h1>DigiTab Portal</h1>
+            <header>
+                <h1>Student Login</h1>
+            </header>
 
-        </div>
+            <main>
+                <form class="form1" action="">
 
-        <div class="card ">
+                    <label for="name" id="username">USERNAME</label>
+                    <input type="email" placeholder="example@email.com" id="email">
+                    <label for="password" id="password">PASSWORD</label>
+                    <input type="password" placeholder="password" id="pinput">
+                    <button>Login</button>
+                </form>
+            </main>
 
-            <button class="btn">Teacher Login 🧑‍🏫</button>
-            <button class="btn">Student Login 🧑‍🎓</button>
-
+            <footer>
+                <a href="">sign in</a>
+                or
+                <a href="">register</a>
+            </footer>
         </div>
     </div>
     
