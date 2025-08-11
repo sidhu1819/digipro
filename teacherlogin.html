@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login </title>
+    <link rel="shortcut icon" href="teacher.png" type="image/x-icon">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+
+            background-color: aliceblue;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form1{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            padding-left: 30px;
+        }
+
+        .card{
+            background-color: #A4CFFF;
+            box-shadow: 6px 6px #8b949f;
+            display: flex;
+            flex-direction: column;
+            border: 3px black solid;
+            border-radius: 30px;
+            height: 500px;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        label{
+            font-size: 15px;
+            font-style: italic;
+            font-weight: bold;
+            padding: 10px;
+            text-align: left;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        input{
+
+            border-radius: 15px;
+            padding: 5px;
+            height: 50px;
+            width: 250px;
+        }
+
+        header{
+            padding: 10px;
+        }
+
+        main{
+            padding: 35px;
+        }
+
+        footer{
+            padding: 10px;
+        }
+
+        button{
+
+            width: 250px;
+            height: 40px;
+            border-radius: 10px;
+            font-size: medium;
+            font-weight: bold;
+            background: #de146b;
+            background: radial-gradient(circle, rgba(222, 20, 107, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <header>
+                <h1>Teacher Login</h1>
+            </header>
+
+            <main>
+                <form class="form1" action="">
+
+                    <input type="email" placeholder="Username,Email,Phone number" id="pinput" >
+                    <input type="password" placeholder="password" id="pinput">
+                    <button>Login</button>
+                </form>
+            </main>
+
+            <footer>
+                <a href="">sign up</a>
+                or
+                <a href="">register</a>
+            </footer>
+        </div>
+    </div>
+    
+</body>
+</html>
