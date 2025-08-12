@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>education portal</title>
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
 
     <style>
 
@@ -101,20 +102,11 @@
 
         <div class="card ">
 
-            <button class="btn" onclick="teacher()">Teacher Login 🧑‍🏫</button>
-            <button class="btn" onclick="studentlogin()">Student Login 🧑‍🎓</button>
+            <button class="btn" onclick="window.location.href = 'teacherlogin.html'">Teacher Login 🧑‍🏫</button>
+            <button class="btn" onclick="window.location.href = 'studentlogin.html'">Student Login 🧑‍🎓</button>
 
         </div>
     </div>
-
-    <script>
-        function studentlogin(){
-            window.open("studentlogin.html");
-        }
-        function teacher(){
-            window.open("teacherlogin.html");
-        }
-    </script>
     
 </body>
 </html>
